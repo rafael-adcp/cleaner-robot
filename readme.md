@@ -5,6 +5,12 @@ This code was idealized to explain the workflow of a cleaner robot while cleanin
 Using a matrix to store the tiles so that we can see what the robot is doing, we create via cli an area and provide an algorithm to the robot. This algorithm will only be called when the robot gets stucked.
 
 ### Definitions
+* colors inside html file output
+    * blue: current robot position
+    * red: obstacules
+    * yellow: possible tiles to be cleaned
+    * gray: patah from A to B provided from DFS
+    * green: cleaned tiles
 * `robot stucked`: when the robot is surrounded by tiles that have already been cleaned and or obstacules.
 * `possible steps`: given the robot current position to which floors he could go. This is used to populate a matrix that will be used by the algorithims to identify a route to get from a stuck position to a tile to be cleaned.
 * `visited tiles`: an array to store the tiles position that the robot have already cleaned.
